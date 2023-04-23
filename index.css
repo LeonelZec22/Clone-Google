@@ -1,15 +1,15 @@
-body{
+body {
     padding: 0;
     border: 0;
     margin: 0;
 }
 
-:root{
+:root {
     font-size: 62.5%;
 }
 
 /* Menú de navegación */
-.Menu__lista{
+.Menu__lista {
     display: flex;
     flex-direction: row;
     margin-top: 0;
@@ -18,26 +18,30 @@ body{
     height: 12vh;
 }
 
-.Menu__lista__items{
+.Menu__lista__items {
     list-style: none;
     margin: 3rem 1rem;
     font-size: 1.4rem;
 }
 
-.Menu__lista__items__links{
- text-decoration: none;
- color: #212121;
- font-family: 'Roboto', sans-serif;
- font-weight: 300;
+.Menu__lista__items__links {
+    text-decoration: none;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
-.Menu__lista__items__icon{
+.Menu__lista__items__links:hover {
+    text-decoration: underline;
+}
+
+.Menu__lista__items__icon {
     position: relative;
     top: -10px;
     margin: 3px 5px 3px 10px;
 }
 
-.Menu__lista__items__foto{
+.Menu__lista__items__foto {
     width: 35px;
     height: 35px;
     position: relative;
@@ -45,3 +49,72 @@ body{
     margin: 3px 20px 5px 3px;
     border-radius: 50%;
 }
+
+/* Contenido Principal */
+
+.logo__figura {
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem 0;
+}
+
+.busqueda,
+.Boton-buscar {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.busqueda__contenedor {
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem 0;
+    width: 45%;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border: 1px #dfe1e5 solid;
+}
+
+.busqueda__contenedor__lupa {
+    margin: 0px 5px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.busqueda__contenedor__input {
+    margin: 0px 5px;
+    width: 83%;
+    outline-style: none;
+    border: 0;
+}
+
+.busqueda__contenedor__camara {
+    width: 2.5rem;
+    margin: 0px 5px;
+}
+
+.Boton-buscar__contenedor {
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem 0;
+    width: 40%;
+}
+
+.Boton-buscar__contenedor_enviar{
+    margin: 0px 1rem;
+    outline-style: none;
+    border: 0;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.Boton-buscar__contenedor_enviar:hover{
+    border: 1px #dfe1e5 solid;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Pie de página */
+
