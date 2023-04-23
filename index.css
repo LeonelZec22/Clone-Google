@@ -22,6 +22,17 @@ body {
     list-style: none;
     margin: 3rem 1rem;
     font-size: 1.4rem;
+
+}
+
+
+.Menu__lista--radius:hover {
+    background-color: #dfe1e5;
+    height: 4rem;
+    position: relative;
+     top: -10px;
+    z-index: 1;
+    border-radius: 50%;
 }
 
 .Menu__lista__items__links {
@@ -29,6 +40,7 @@ body {
     color: #212121;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    z-index: 10;
 }
 
 .Menu__lista__items__links:hover {
@@ -37,9 +49,18 @@ body {
 
 .Menu__lista__items__icon {
     position: relative;
-    top: -10px;
+    top: -7px;
+    left: -3px;
     margin: 3px 5px 3px 10px;
+    /* height: 3rem; */
 }
+
+.Menu__lista__items__icon:hover {
+    top: 3.5px;
+    left: -2px;
+    width: 2.8rem;
+}
+
 
 .Menu__lista__items__foto {
     width: 35px;
@@ -52,9 +73,10 @@ body {
 
 /* Contenido Principal */
 
-main{
+main {
     height: 68vh;
 }
+
 .logo__figura {
     display: flex;
     justify-content: center;
@@ -102,7 +124,7 @@ main{
     width: 40%;
 }
 
-.Boton-buscar__contenedor_enviar{
+.Boton-buscar__contenedor_enviar {
     margin: 0px 1rem;
     outline-style: none;
     border: 0;
@@ -113,50 +135,57 @@ main{
     cursor: pointer;
 }
 
-.Boton-buscar__contenedor_enviar:hover{
+.Boton-buscar__contenedor_enviar:hover {
     border: 1px #dfe1e5 solid;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Pie de página */
 
-footer{
+footer {
     background-color: #f2f2f2;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
-.informacion{
-    border-bottom:  1.5px #dfe1e5 solid;
+.informacion {
+    border-bottom: 1.5px #dfe1e5 solid;
     padding: 5px;
 }
-.informacion__pais{
+
+.informacion__pais {
     margin: 10px 20px;
     color: #70757a;
     font-family: 'Roboto', sans-serif;
 }
-.acerca-de{
+
+.acerca-de {
     display: flex;
     margin: 10px 20px;
 }
 
-.acerca-de__link{
+.acerca-de__link {
     display: flex;
 }
 
-.acerca-de__link__item{
+.acerca-de__link__item {
     list-style: none;
     margin: 5px 10px;
 }
 
-.acerca-de__link__item a{
+.acerca-de__link__item a {
     text-decoration: none;
     color: #70757a;
     font-family: 'Roboto', sans-serif;
     position: relative;
     top: 1.2rem;
 }
-.condiciones{
+
+.acerca-de__link__item a:hover{
+    text-decoration: underline;
+}
+
+.condiciones {
     margin-left: auto;
 }
