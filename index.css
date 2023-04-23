@@ -52,6 +52,9 @@ body {
 
 /* Contenido Principal */
 
+main{
+    height: 68vh;
+}
 .logo__figura {
     display: flex;
     justify-content: center;
@@ -93,7 +96,6 @@ body {
 }
 
 .Boton-buscar__contenedor {
-    /* background-color: chartreuse; */
     display: flex;
     justify-content: center;
     padding: 1.8rem 0;
@@ -118,3 +120,43 @@ body {
 
 /* Pie de página */
 
+footer{
+    background-color: #f2f2f2;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion{
+    border-bottom:  1.5px #dfe1e5 solid;
+    padding: 5px;
+}
+.informacion__pais{
+    margin: 10px 20px;
+    color: #70757a;
+    font-family: 'Roboto', sans-serif;
+}
+.acerca-de{
+    display: flex;
+    margin: 10px 20px;
+}
+
+.acerca-de__link{
+    display: flex;
+}
+
+.acerca-de__link__item{
+    list-style: none;
+    margin: 5px 10px;
+}
+
+.acerca-de__link__item a{
+    text-decoration: none;
+    color: #70757a;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 1.2rem;
+}
+.condiciones{
+    margin-left: auto;
+}
